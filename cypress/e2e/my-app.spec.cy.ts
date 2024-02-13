@@ -2,7 +2,6 @@
 
 describe("My Home page test with login", () => {
 
-
   beforeEach(() => {
     cy.task("queryFromFile", "cypress/database/purge_users.sql");
   });
@@ -16,10 +15,9 @@ describe("My Home page test with login", () => {
     cy.visit("/");
     cy.login();
 	
-	cy.visit("/register");
-	cy.get('input[name="nom"]').type("CYPRESSNOM");
-    cy.get('input[name="prenom"]').type("CYPRESSPRENOM");
-	
-	cy.contains("button", "Submit").click();
+    cy.visit("/register");
+    cy.get('input[name="nom"]').type("CYPRESSNOM");
+    cy.get('input[name="prenom"]').type("CYPRESSPRENOM");	
+    cy.contains("button", "Submit").click();
   });
 });
