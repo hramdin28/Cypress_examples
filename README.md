@@ -1,6 +1,13 @@
 # Cypress_examples
 A project containing the below cypress examples:
 
+## Requirements
+`
+npm i pg --save-dev
+npm i @types/pg  --save-dev
+
+`
+
 ## Custom commands
 I have created a custom login command that does the following:
 - Redirection to a Keycloak server
@@ -14,3 +21,5 @@ I have created a custom action that does the following:
 - The above file contains functions that can connect to postgres database.
 - Read an SQL file
 - Launch the sql queries in the SQL file.
+
+The action is registered in the file `cypress.config.ts`
