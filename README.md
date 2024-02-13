@@ -2,11 +2,11 @@
 A project containing the below cypress examples:
 
 ## Requirements
-`
+```
 npm i pg --save-dev
 npm i @types/pg  --save-dev
 
-`
+```
 
 ## Custom commands
 I have created a custom login command that does the following:
